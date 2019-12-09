@@ -6,7 +6,8 @@ This is still very much in progress. Don't use it :-)
 * Source: https://github.com/wingechr/filetools
 * Package: https://pypi.org/project/filetools
 
-# development
+
+# Development
 
 ### code quality
 ```bash
@@ -22,6 +23,7 @@ python3 -m unittest
 
 ### build docs locally
 ```bash
+pandoc -f markdown_github -i README.md -o docs/source/readme.rst
 sphinx-build -b html docs/source docs/build
 ```
 

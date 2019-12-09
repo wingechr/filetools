@@ -10,6 +10,7 @@ filetools
    :maxdepth: 2
    :caption: Contents:
 
+   readme.rst
 
 
 Indices and tables
