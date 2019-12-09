@@ -8,28 +8,42 @@ This is still very much in progress. Don't use it :-)
 
 # development
 
-# code quality
+### code quality
+```bash
 python3 -m black  # actually reformat code
 python3 -m pycodestyle .  # check (previously pep8)
 python3 -m pylint filetools
+```
 
-# testing
+### testing
+```bash
 python3 -m unittest
+```
 
-# build docs locally
+### build docs locally
+```bash
 sphinx-build -b html docs/source docs/build
+```
 
-# bump version
+### bump version
+```bash
 bumpversion --allow-dirty patch
+```
 
-# git
+### git
+```bash
 git add .
 git status
 git commit
 git push  # use github webhooks to build documentation on readthedocs
+```
 
-# build (remove old versions first)
+### build (remove old versions first)
+```bash
 python3 setup.py rotate -m ".*" -k 0 sdist
+```
 
-# distribute
+### distribute
+```bash
 python3 -m twine upload dist/*
+```
