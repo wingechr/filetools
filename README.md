@@ -10,7 +10,7 @@ This is still very much in progress. Don't use it :-)
 
 ### code quality
 ```bash
-python3 -m black  # actually reformat code
+python3 -m black .  # actually reformat code
 python3 -m pycodestyle .  # check (previously pep8)
 python3 -m pylint filetools
 ```
