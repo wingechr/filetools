@@ -6,16 +6,16 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="filetools",
-    version="0.0.4",
+    version="0.0.5",
     author="Christian Winger",
     author_email="c@wingechr.de",
-    description="",
+    description="file processing tools",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="",
+    url="https://pypi.org/project/filetools",
     project_urls={
-        'Documentation': 'https://filetools.readthedocs.io',
-        'Source': 'https://github.com/wingechr/filetools',        
+        "Documentation": "https://filetools.readthedocs.io",
+        "Source": "https://github.com/wingechr/filetools",
     },
     packages=setuptools.find_packages(),
     classifiers=[
@@ -23,5 +23,5 @@ setuptools.setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
-    python_requires='>=3.6',
+    python_requires=">=3.6",
 )
