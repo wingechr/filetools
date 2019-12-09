@@ -18,7 +18,7 @@ python3 -m pylint filetools
 
 ### testing
 ```bash
-python3 -m unittest
+nosetests --with-doctest
 ```
 
 ### build docs locally
