@@ -1,5 +1,8 @@
 # coding: utf-8
-
+import sys
+import os
+# insert the project's root dir first
+sys.path.insert(0, os.path.join(os.path.dirname(__name__), '..', '..'))
 
 project = "filetools"
 release = "0.0.6"
