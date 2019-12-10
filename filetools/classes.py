@@ -1,4 +1,3 @@
-
 class FileTool:
     def __init__(self, **user_settings):
         """
@@ -26,7 +25,6 @@ class FileTool:
         """
         fr = self.identify_file(path)
 
-
     def register_file_resource_class(self, file_resource_class):
         """Register a new class based on FileResource
         :param file_resource_class: subclass of FileResource
@@ -47,7 +45,6 @@ class FileResource:
 class FileInspector:
     # :param file_types: blabla
     file_types = []
-
 
 
 class Config:
