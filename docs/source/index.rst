@@ -10,7 +10,9 @@ filetools
    :maxdepth: 2
    :caption: Contents:
 
-   readme.rst
+   readme
+   apidoc
+   
 
 
 Indices and tables
