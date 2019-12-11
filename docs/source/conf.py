@@ -1,11 +1,9 @@
 # coding: utf-8
 import sys
 import os
-import sphinx_rtd_theme
 
 # insert the project's root dir first so apidoc can find the modules
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__name__), "..", "..")))
-
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..")))
 
 project = "filetools"
 release = "0.0.6"
@@ -25,7 +23,6 @@ extensions = [
     "sphinx.ext.napoleon",
 ]
 
-html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 html_theme = "sphinx_rtd_theme"  # classic | bootstrap | alabaster | sphinx_rtd_theme
 source_suffix = ".rst"
 master_doc = "index"
@@ -45,3 +42,29 @@ add_function_parentheses = True
 html_show_sourcelink = False
 html_show_sphinx = False
 html_show_copyright = False
+
+# Napoleon settings
+napoleon_google_docstring = True
+napoleon_numpy_docstring = True
+napoleon_include_init_with_doc = False
+napoleon_include_private_with_doc = False
+napoleon_include_special_with_doc = False
+napoleon_use_admonition_for_examples = False
+napoleon_use_admonition_for_notes = False
+napoleon_use_admonition_for_references = False
+napoleon_use_ivar = False
+napoleon_use_param = True
+napoleon_use_rtype = True
+napoleon_use_keyword = True
+
+# mathjax
+mathjax_path = "mathjax/MathJax.js"  # relative to _static
+
+# extend template
+html_css_files = [
+    "mystyle.css",
+]
+
+html_js_files = [
+    "mathjaxConfig.js",
+]
