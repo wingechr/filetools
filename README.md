@@ -24,7 +24,7 @@ nosetests --with-doctest
 ### build docs locally
 ```bash
 pandoc -f markdown_github -i README.md -o docs/source/readme.rst
-sphinx-build -b html docs/source docs/build
+sphinx-build -a -E -b html docs/source docs/build
 ```
 
 ### bump version

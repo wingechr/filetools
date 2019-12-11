@@ -32,7 +32,7 @@ class FileTool:
         Args:
             path: Path like object describing the location
             file_type (str): file type identifier
-                             like 'text/json' or 'text/image/jpg'
+                             like "text/json" or "text/image/jpg"
         Returns:
             FileResource class that matches the file
         """
@@ -41,7 +41,7 @@ class FileTool:
             resource_class = self.resource_classes.get(ftype)
             if resource_class:
                 return resource_class
-        raise Exception('No FileResource matching "%s"' % file_type)
+        raise Exception("No FileResource matching '%s'" % file_type)
 
     def inspect_file(self, path):
         """Identify a file.
@@ -56,7 +56,7 @@ class FileTool:
         file_type = file_resource_class.file_type
         # get all the registered inspectors that are appropriate
         # for this file type OR any one above that in the hierarchy,
-        # i.e. 'text/csv' also gets information from 'text'
+        # i.e. "text/csv" also gets information from "text"
         # starting from the top
         meta_all = Dict(get_key=lambda x: str(x).lower() if x else "")
         for ftype in get_file_types_hierarchy(file_type):
