@@ -23,25 +23,28 @@ extensions = [
     "sphinx.ext.napoleon",
 ]
 
-html_theme = "sphinx_rtd_theme"  # classic | bootstrap | alabaster | sphinx_rtd_theme
+html_theme = "sphinx_rtd_theme"  # classic bootstrap  alabaster sphinx_rtd_theme
 source_suffix = ".rst"
 master_doc = "index"
 templates_path = ["_templates"]
 html_static_path = ["_static"]
 pygments_style = "sphinx"
-html_theme_options = {}
-html_sidebars = {}
-htmlhelp_basename = "filetoolsdoc"
+# html_theme_options = {}
+# html_sidebars = {}
+htmlhelp_basename = project
 todo_include_todos = True
 source_encoding = "utf-8"
 add_module_names = False
-show_authors = True
+show_authors = False
 nitpicky = False
 html_use_index = True
 add_function_parentheses = True
 html_show_sourcelink = False
 html_show_sphinx = False
 html_show_copyright = False
+html_logo = '_static/logo.svg'
+html_favicon = '_static/favicon.ico'
+
 
 # Napoleon settings
 napoleon_google_docstring = True
@@ -58,13 +61,12 @@ napoleon_use_rtype = True
 napoleon_use_keyword = True
 
 # mathjax
-mathjax_path = "mathjax/MathJax.js"  # relative to _static
+mathjax_path = r"mathjax/MathJax.js"
 
 # extend template
 html_css_files = [
     "mystyle.css",
 ]
-
 html_js_files = [
     "mathjaxConfig.js",
 ]
