@@ -9,7 +9,7 @@ sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..",
 from setup import __title__, __version__, __author__, __language__
 
 pygments_style = "sphinx"
-html_theme = "sphinx_rtd_theme"  # classic bootstrap  alabaster sphinx_rtd_theme
+html_theme = "sphinx_rtd_theme"  # alabaster bootstrap sphinx_rtd_theme
 
 project = __title__
 release = __version__
@@ -41,11 +41,11 @@ source_encoding = "utf-8"
 html_logo = "_static/logo.svg"
 html_favicon = "_static/favicon.ico"
 add_module_names = False
-show_authors = False
 nitpicky = False
 html_use_index = True
 add_function_parentheses = True
 html_show_sourcelink = False
+show_authors = False
 html_show_sphinx = False
 html_show_copyright = False
 todo_include_todos = True

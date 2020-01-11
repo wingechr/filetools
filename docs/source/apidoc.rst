@@ -1,8 +1,11 @@
-filetools package
-=================
+API
+===
 
-Submodules
-----------
+.. automodule:: filetools
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
 
 filetools.classes module
 ------------------------
@@ -21,10 +24,3 @@ filetools.tools module
     :show-inheritance:
 
 
-Module contents
----------------
-
-.. automodule:: filetools
-    :members:
-    :undoc-members:
-    :show-inheritance:

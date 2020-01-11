@@ -81,9 +81,9 @@ class FileTool:
             file_inspector_class: subclass of FileInspector
         """
         for ftype in file_inspector_class.file_types:
-            self.file_inspector_classes.get(ftype, set(), add_on_missing=True).add(
-                file_inspector_class
-            )
+            fic = self.file_inspector_classes.get(ftype, set(),
+                                                  add_on_missing=True)
+            fic.add(file_inspector_class)
 
     def register_file_class(self, file_class):
         if not issubclass(file_class, FileBase):
@@ -103,7 +103,8 @@ class FileResource(FileBase):
 
 
 class FileInspector(FileBase):
-    # :param file_types: blabla
+    #: blabla blub
+    #: blabla blub
     file_types = None
 
     @classmethod

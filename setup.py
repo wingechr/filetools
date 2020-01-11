@@ -2,7 +2,7 @@
 import setuptools
 
 __title__ = "filetools"
-__version__ = "0.0.7"
+__version__ = "0.0.8"
 __author__ = "Christian Winger"
 __contact__ = "c@wingechr.de"
 __license__ = "MIT License"
@@ -10,11 +10,11 @@ __language__ = "en"
 __description__ = "file processing tools"
 
 
-if __name__ == '__main__':        
-        
+if __name__ == "__main__":
+
     with open("README.md", "r", encoding="utf-8") as fh:
         long_description = fh.read()
-    
+
     setuptools.setup(
         name=__title__,
         version=__version__,
